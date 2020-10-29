@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 const Error = () => {
   return (
-    <section className="section error-page">
-      <div className="error-container">
+    <section className="">
+      <div className="">
       <h1>Oops... This page does not exist</h1>
-      <Link to="/" className="btn">
+      <Link to="/" className="btn btn-primary">
         Back to home
       </Link>
       </div>

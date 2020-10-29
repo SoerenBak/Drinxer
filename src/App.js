@@ -6,9 +6,12 @@ import Home from './pages/Home'
 import About from './pages/About'
 import SingleCocktail from './pages/SingleCocktail'
 import Error from './pages/Error'
+// import bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css'
 // import components
 import Navbar from './components/Navbar'
 import Cocktail from './components/Cocktail'
+
 function App() {
   return (
     <div>
