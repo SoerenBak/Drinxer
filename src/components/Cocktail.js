@@ -8,8 +8,8 @@ const Cocktail = ({image, name, id, info, glass}) => {
             <div className="card">
               <h3>{name}</h3>
               <h4>{glass}</h4>
-              <p>{info}</p>
-              <Link to={`/cocktail/${id}`} className="btn btn-primary btn-details">
+              <p><span className="btn-grad-alco">{info}</span></p>
+              <Link to={`/cocktail/${id}`} className="btn-grad">
                 Details
               </Link>
             </div>

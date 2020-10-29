@@ -6,7 +6,7 @@ const Error = () => {
     <section className="">
       <div className="">
       <h1>Oops... This page does not exist</h1>
-      <Link to="/" className="btn btn-primary">
+      <Link to="/" className="btn-grad">
         Back to home
       </Link>
       </div>

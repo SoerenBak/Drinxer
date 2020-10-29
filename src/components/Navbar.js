@@ -4,28 +4,13 @@ import logo from '../logo.svg'
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="nav-center">
+    <nav className="">
+      <div className="text-center">
         <Link to="/">
-          <img src={logo} alt="Drinxer logo" className="logo"></img>
+            <span className="main-logo">Drinxer</span>
         </Link>
-        <ul className="nav-links">
-          <li>
-            <Link to="/">
-              Home
-            </Link>
-            <Link to="/about">
-              About
-            </Link>
-          </li>
-
-        </ul>
       </div>
-      
     </nav>
-    
-    
-   
   )
 }
 

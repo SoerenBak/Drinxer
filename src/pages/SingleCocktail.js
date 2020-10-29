@@ -61,42 +61,57 @@ const SingleCocktail = () => {
     return <Loading />
   }
   if(!cocktail) {
-    return <h2 className="section-title">No cocktail to display</h2>
+    return <div className="col-lg-12 text-center drink-info">
+        <h2 className="">No cocktail to display</h2>
+    </div>
+    
   }
   const {name, image, category, info, glass,instructions, ingredients} = cocktail;
   return (
-    <section className="section cocktail-section">
-      <Link to="/" className='btn btn-primary'> Back home
-      </Link>
-      <h2 className="section-title">{name}</h2>
-      <div className="drink">
-        <img src={image} alt={name}></img>
+    <div className="container">
+      <div className="row">
+        <div className="cocktail-info">
+
+        </div>
+      <div className="col-lg-6">
+        <div className="drink">
+          <img src={image} alt={name} className="img-fluid"></img>
+        </div>
       </div>
+      <div className="col-lg-6 drink-info">
       <div className="drink-info">
+        <h2>{name}</h2>
         <p>
-          <span className="drink-data">Name :</span>
+          <span className="drink-data">Name:</span>
           {name}
         </p>
         <p>
-          <span className="drink-data">Category :</span>
+          <span className="drink-data">Category:</span>
           {category}
         </p>
         <p>
-          <span className="drink-data">Glass :</span>
+          <span className="drink-data">Glass:</span>
           {glass}
         </p>
         <p>
-          <span className="drink-data">Instructions :</span>
-          {instructions}
+          <span className="drink-data">Info:</span>
+          {info}
         </p>
         <p>
-          <span className="drink-data">Ingredients :</span>
+          <span className="drink-data">Instructions:</span>{instructions}
+        </p>
+        <p>
+          <span className="drink-data">Ingredients:</span>
           {ingredients.map((item,index) => {
-            return item? <span key={index}>{item},</span> : null
+            return item? <span key={index}>{item}, </span> : null
           })}
         </p>
       </div>
-    </section>
+      </div>
+      </div>
+     
+      
+      </div>
   )
 }
 
